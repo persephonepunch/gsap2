@@ -8,7 +8,7 @@ slug: shirt-1
 f_select-a-category: cms/categories/shirts.md
 updated-on: '2022-06-22T14:55:22.601Z'
 created-on: '2022-06-22T14:55:22.601Z'
-published-on: '2022-06-22T15:01:08.033Z'
+published-on: '2022-06-22T17:23:10.598Z'
 layout: '[products].html'
 tags: products
 ---

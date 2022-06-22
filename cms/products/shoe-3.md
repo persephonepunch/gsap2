@@ -8,7 +8,7 @@ f_image:
 f_select-a-category: cms/categories/shoes.md
 updated-on: '2022-06-22T14:52:53.640Z'
 created-on: '2022-06-22T14:52:53.640Z'
-published-on: '2022-06-22T15:01:08.033Z'
+published-on: '2022-06-22T17:23:10.598Z'
 layout: '[products].html'
 tags: products
 ---

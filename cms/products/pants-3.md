@@ -8,7 +8,7 @@ slug: pants-3
 f_select-a-category: cms/categories/pants.md
 updated-on: '2022-06-22T14:54:59.185Z'
 created-on: '2022-06-22T14:54:59.185Z'
-published-on: '2022-06-22T15:01:08.033Z'
+published-on: '2022-06-22T17:23:10.598Z'
 layout: '[products].html'
 tags: products
 ---
