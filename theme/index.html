@@ -44,7 +44,7 @@ body * {
 }
 </style>
   </div>
-  <div class="section is--hero"><img src="{{ images.30705f69.url }}" loading="lazy" sizes="100vw" alt="{{ images.30705f69.alt | trim | escape }}" class="hero_img"></div>
+  <div class="section is--hero"><img src="{{ images.30705f69.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" sizes="100vw" alt="{{ images.30705f69.alt | trim | escape }}" class="hero_img"></div>
   <div class="wrapper">
     <section class="section is--nav">
       <div class="container is--nav">
@@ -151,7 +151,7 @@ body * {
         </div>
         <div class="sticky-circle_wrap">
           <div class="sticky-circle">
-            <div class="sticky-circle_element"><img src="{{ images.126e0cb.url }}" loading="lazy" sizes="100vw" alt="{{ images.126e0cb.alt | trim | escape }}" class="sticky-circle_img"></div>
+            <div class="sticky-circle_element"><img src="{{ images.126e0cb.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" sizes="100vw" alt="{{ images.126e0cb.alt | trim | escape }}" class="sticky-circle_img"></div>
           </div>
         </div>
       </div>
@@ -180,56 +180,56 @@ body * {
     </div>
     <div class="section is--grid">
       <div class="container is--grid">
-        <div class="grid_text-wrap w-dyn-list">
-          <div role="list" class="grid_text-list w-dyn-items">
-            <div role="listitem" class="grid_text-item w-dyn-item">
-              <p class="grid_text-title"></p>
-            </div>
-          </div>
-          <div class="w-dyn-empty">
+        {%- assign collection = collections.categories | sort: "-created-on" -%}<div class="grid_text-wrap w-dyn-list">
+          {%- unless collection.length == 0 -%}<div role="list" class="grid_text-list w-dyn-items">
+            {%- for item in collection -%}<div role="listitem" class="grid_text-item w-dyn-item">
+              <p class="grid_text-title">{{ item.data.title }}</p>
+            </div>{%- endfor -%}
+          </div>{%- endunless -%}
+          {%- if collection.length == 0 -%}<div class="w-dyn-empty">
             <div>{{ texts.3d503d2b }}</div>
-          </div>
+          </div>{%- endif -%}
         </div>
         <div class="grid_wrapper-contain">
-          <div class="grid_wrapper w-dyn-list">
-            <div role="list" class="grid_list w-dyn-items">
-              <div role="listitem" class="grid_item w-dyn-item">
-                <div class="grid_element"><img src="{{ images.0.url }}" loading="lazy" alt="{{ images.0.alt | trim | escape }}" class="grid_img"></div>
-              </div>
-            </div>
-            <div class="w-dyn-empty">
+          {%- assign collection = collections.products | filter: "f_select-a-category,eq,cms/categories/pants.md", "ALL", page.inputPath | sort: "-created-on" -%}<div class="grid_wrapper w-dyn-list">
+            {%- unless collection.length == 0 -%}<div role="list" class="grid_list w-dyn-items">
+              {%- for item in collection -%}<div role="listitem" class="grid_item w-dyn-item">
+                <div class="grid_element"><img src="{{ images.0.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;29vw&quot;}]" alt="{{ images.0.alt | trim | escape }}" class="grid_img"></div>
+              </div>{%- endfor -%}
+            </div>{%- endunless -%}
+            {%- if collection.length == 0 -%}<div class="w-dyn-empty">
               <div>{{ texts.3d503d2b }}</div>
-            </div>
+            </div>{%- endif -%}
           </div>
-          <div class="grid_wrapper w-dyn-list">
-            <div role="list" class="grid_list w-dyn-items">
-              <div role="listitem" class="grid_item w-dyn-item">
-                <div class="grid_element"><img src="{{ images.0.url }}" loading="lazy" alt="{{ images.0.alt | trim | escape }}" class="grid_img"></div>
-              </div>
-            </div>
-            <div class="w-dyn-empty">
+          {%- assign collection = collections.products | filter: "f_select-a-category,eq,cms/categories/pants.md", "ALL", page.inputPath | sort: "-created-on" -%}<div class="grid_wrapper w-dyn-list">
+            {%- unless collection.length == 0 -%}<div role="list" class="grid_list w-dyn-items">
+              {%- for item in collection -%}<div role="listitem" class="grid_item w-dyn-item">
+                <div class="grid_element"><img src="{{ images.0.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;29vw&quot;}]" alt="{{ images.0.alt | trim | escape }}" class="grid_img"></div>
+              </div>{%- endfor -%}
+            </div>{%- endunless -%}
+            {%- if collection.length == 0 -%}<div class="w-dyn-empty">
               <div>{{ texts.3d503d2b }}</div>
-            </div>
+            </div>{%- endif -%}
           </div>
-          <div class="grid_wrapper w-dyn-list">
-            <div role="list" class="grid_list w-dyn-items">
-              <div role="listitem" class="grid_item w-dyn-item">
-                <div class="grid_element"><img src="{{ images.0.url }}" loading="lazy" alt="{{ images.0.alt | trim | escape }}" class="grid_img"></div>
-              </div>
-            </div>
-            <div class="w-dyn-empty">
+          {%- assign collection = collections.products | filter: "f_select-a-category,eq,cms/categories/shoes.md", "ALL", page.inputPath | sort: "-created-on" -%}<div class="grid_wrapper w-dyn-list">
+            {%- unless collection.length == 0 -%}<div role="list" class="grid_list w-dyn-items">
+              {%- for item in collection -%}<div role="listitem" class="grid_item w-dyn-item">
+                <div class="grid_element"><img src="{{ images.0.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;29vw&quot;}]" alt="{{ images.0.alt | trim | escape }}" class="grid_img"></div>
+              </div>{%- endfor -%}
+            </div>{%- endunless -%}
+            {%- if collection.length == 0 -%}<div class="w-dyn-empty">
               <div>{{ texts.3d503d2b }}</div>
-            </div>
+            </div>{%- endif -%}
           </div>
-          <div class="grid_wrapper is--alt w-dyn-list">
-            <div role="list" class="grid_list w-dyn-items">
-              <div role="listitem" class="grid_item w-dyn-item">
-                <div class="grid_element"><img src="{{ images.0.url }}" loading="lazy" alt="{{ images.0.alt | trim | escape }}" class="grid_img"></div>
-              </div>
-            </div>
-            <div class="w-dyn-empty">
+          {%- assign collection = collections.products | sort: "-created-on" -%}<div class="grid_wrapper is--alt w-dyn-list">
+            {%- unless collection.length == 0 -%}<div role="list" class="grid_list w-dyn-items">
+              {%- for item in collection -%}<div role="listitem" class="grid_item w-dyn-item">
+                <div class="grid_element"><img src="{{ images.0.url }}" loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;29vw&quot;}]" alt="{{ images.0.alt | trim | escape }}" class="grid_img"></div>
+              </div>{%- endfor -%}
+            </div>{%- endunless -%}
+            {%- if collection.length == 0 -%}<div class="w-dyn-empty">
               <div>{{ texts.3d503d2b }}</div>
-            </div>
+            </div>{%- endif -%}
           </div>
         </div>
       </div>
