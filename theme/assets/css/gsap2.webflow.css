@@ -132,12 +132,14 @@ blockquote {
   position: sticky;
   top: 0px;
   z-index: 1000;
+  display: none;
   margin-top: -1px;
   background-color: #2e2a27;
 }
 
 .section.is--hero {
   position: relative;
+  display: none;
   overflow: hidden;
   height: 100vh;
 }
