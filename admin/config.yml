@@ -147,6 +147,10 @@ collections:
         label: Published On
         widget: datetime
         required: false
+      - label: editable field
+        name: body
+        widget: markdown
+        required: false
       - hint: ''
         name: f_image
         label: Image
@@ -307,9 +311,9 @@ collections:
             label: Text
             name: 77fcb5be
             widget: string
-          - hint: 'Original text: FOR YOU, key: 2567808'
+          - hint: 'Original text: BLUES, key: 3c5e339'
             label: Text
-            name: '2567808'
+            name: 3c5e339
             widget: string
           - hint: 'Original text: FOOTJOY, key: 2439c86'
             label: Text

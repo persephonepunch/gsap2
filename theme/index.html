@@ -14,6 +14,7 @@
   <style>
 ::selection {background: #000000; color: #FFFFFF; text-shadow: none;}
 </style>
+  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 {{ settings.site.header_additional_content }}{%- include "partials/_site-css-variables" -%}<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><style>.w-video.w-embed {
             aspect-ratio: 16 / 9;
         }</style></head>
@@ -145,7 +146,7 @@ body * {
           </div>
           <div class="header_text-wrap">
             <div class="header_text-move is--last">
-              <h1>{{ texts.2567808 }}</h1>
+              <h1>{{ texts.3c5e339 }}</h1>
             </div>
           </div>
         </div>
@@ -161,7 +162,7 @@ body * {
         <div class="categories">
           <a href="{{ links.23 }}" class="categories_link w-inline-block">
             <div class="categories_border"></div>
-            <p class="categories_link-text">{{ texts.217862 }}</p>
+            <p class="categories_link-text">{{ texts.3c5e339 }}</p>
           </a>
           <a href="{{ links.23 }}" class="categories_link w-inline-block">
             <div class="categories_border"></div>
@@ -194,7 +195,7 @@ body * {
           {%- assign collection = collections.products | filter: "f_select-a-category,eq,cms/categories/pants.md", "ALL", page.inputPath | sort: "-created-on" -%}<div class="grid_wrapper w-dyn-list">
             {%- unless collection.length == 0 -%}<div role="list" class="grid_list w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="grid_item w-dyn-item">
-                <div class="grid_element"><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;29vw&quot;}]" loading="lazy" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image.alt }}" class="grid_img"></div>
+                <div class="grid_element"><img loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;23vw&quot;}]" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image.alt }}" class="grid_img"></div>
               </div>{%- endfor -%}
             </div>{%- endunless -%}
             {%- if collection.length == 0 -%}<div class="w-dyn-empty">
@@ -204,7 +205,7 @@ body * {
           {%- assign collection = collections.products | filter: "f_select-a-category,eq,cms/categories/pants.md", "ALL", page.inputPath | sort: "-created-on" -%}<div class="grid_wrapper w-dyn-list">
             {%- unless collection.length == 0 -%}<div role="list" class="grid_list w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="grid_item w-dyn-item">
-                <div class="grid_element"><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;29vw&quot;}]" loading="lazy" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image.alt }}" class="grid_img"></div>
+                <div class="grid_element"><img loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;23vw&quot;}]" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image.alt }}" class="grid_img"></div>
               </div>{%- endfor -%}
             </div>{%- endunless -%}
             {%- if collection.length == 0 -%}<div class="w-dyn-empty">
@@ -214,7 +215,7 @@ body * {
           {%- assign collection = collections.products | filter: "f_select-a-category,eq,cms/categories/shoes.md", "ALL", page.inputPath | sort: "-created-on" -%}<div class="grid_wrapper w-dyn-list">
             {%- unless collection.length == 0 -%}<div role="list" class="grid_list w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="grid_item w-dyn-item">
-                <div class="grid_element"><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;29vw&quot;}]" loading="lazy" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image.alt }}" class="grid_img"></div>
+                <div class="grid_element"><img loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;29vw&quot;}]" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image.alt }}" class="grid_img"></div>
               </div>{%- endfor -%}
             </div>{%- endunless -%}
             {%- if collection.length == 0 -%}<div class="w-dyn-empty">
@@ -224,7 +225,7 @@ body * {
           {%- assign collection = collections.products | sort: "-created-on" -%}<div class="grid_wrapper is--alt w-dyn-list">
             {%- unless collection.length == 0 -%}<div role="list" class="grid_list w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="grid_item w-dyn-item">
-                <div class="grid_element"><img data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;29vw&quot;}]" loading="lazy" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image.alt }}" class="grid_img"></div>
+                <div class="grid_element"><img loading="lazy" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;29vw&quot;}]" src="{{ item.data.f_image.url }}" alt="{{ item.data.f_image.alt }}" class="grid_img"></div>
               </div>{%- endfor -%}
             </div>{%- endunless -%}
             {%- if collection.length == 0 -%}<div class="w-dyn-empty">
@@ -446,4 +447,4 @@ $(".grid_item:nth-child(3n+3)").each(function (index) {
 });
 </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script>window.netlifyIdentity&&window.netlifyIdentity.on("init",a=>{a||window.netlifyIdentity.on("login",()=>{document.location.href="/admin/"})});</script></body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script>window.netlifyIdentity&&window.netlifyIdentity.on("init",a=>{a||window.netlifyIdentity.on("login",()=>{document.location.href="/admin/"})});</script><script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.1/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script></body></html>
